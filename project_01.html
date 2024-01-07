@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <script
+      src="https://kit.fontawesome.com/49a80d215a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Preahvihear&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@100;300;400;500&family=Rubik:wght@300;400;500;600;700&family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="navbar">
+      <div class="header-content">
+        <div class="logo"><img src="logo23" alt="" />strinja</div>
+        <nav class="menu">
+          <ul class="class-list">
+            <li>
+              <button class="class-link" onclick="scrollToSection('home')">
+                Home
+              </button>
+            </li>
+            <li>
+              <button class="class-link" onclick="scrollToSection('about-us')">
+                About us
+              </button>
+            </li>
+            <li>
+              <button class="class-link" onclick="scrollToSection('Gallary')">
+                Gallery
+              </button>
+            </li>
+            <li>
+              <button
+                class="class-link"
+                onclick="scrollToSection('Contact-us')"
+              >
+                Contact us
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburgur">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+    <section id="home">
+      <div class="main" id="home">
+        <div class="main-content">
+          <h1 class="heading">
+            <div class="head-cont-1">
+              the
+              <div class="txt">art</div>
+            </div>
+            <div class="head-cont-2">gallery</div>
+          </h1>
+          <p>
+            "Explore a curated canvas of inspiration at our online art gallery –
+            where every piece tells a unique and captivating story."
+          </p>
+          <button class="btn" onclick="scrollToSection('Gallary')">
+            Explore now
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about-us">
+      <div class="g-heading">About Us</div>
+      <div class="lane">
+        <div class="about-content">
+          <h1 class="content-heading">Welcome to Our Website</h1>
+          <p>
+            Fueling creativity and cultural connection, our mission is to enrich
+            lives through the transformative power of art. We envision a world
+            where art sparks positive change, fostering a more compassionate and
+            interconnected society. Guided by a passion for innovation and the
+            human experience, we believe in art's ability to inspire, challenge
+            perspectives, and contribute to meaningful, positive transformations
+            in individuals and communities alike.
+          </p>
+        </div>
+        <video
+          src="strinja_video"
+          type="video/mp4"
+          controls
+          class="video"
+        ></video>
+      </div>
+      <div class="founder-msg">
+        <h1 class="msg-heading">Message From Founder</h1>
+        <div class="mesg">
+          <i class="fa-solid fa-quote-left" id="left"></i>
+          I am thrilled to welcome you to the Strinja family, a venture that has
+          been a dream for a while. As a founder, I want to share why we
+          embarked on this journey. Each string of art creates thousands of
+          memories, these arts are generally made by unemployed, uneducated
+          women in rural and urban areas with the help of some engineers. Each
+          customer is helping in women empowerment.
+          <i class="fa-solid fa-quote-right" id="right"></i>
+        </div>
+      </div>
+      <div class="mission-vision">
+        <div class="g-heading">Our Mission & Vision</div>
+        <div class="row-1">
+          <div class="mis-col">
+            <div class="mis-logo">
+              <i class="fa-regular fa-lightbulb"></i>
+            </div>
+            <div class="mis-content">
+              <h1>Our Mission</h1>
+              <li>Prioritize employing uneducated people.</li>
+              <li>Influencing towards hand-made arts.</li>
+              <li>Accessibility all over world at best price.</li>
+            </div>
+          </div>
+          <div class="mis-col">
+            <div class="mis-logo">
+              <i class="fa-solid fa-binoculars"></i>
+            </div>
+            <div class="mis-content">
+              <h1>Our Vision</h1>
+              <p>
+                To keep spirit of traditional culture of hand made arts alive
+                and create a sustainable eco friendly environment.
+              </p>
+            </div>
+          </div>
+          <div class="mis-col">
+            <div class="mis-logo">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="mis-content">
+              <h1 class="spec-heading">Speciality</h1>
+              <li>Ready made string arts.</li>
+              <li>3 days fast-delivery.</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Gallary">
+      <div class="img-gallery" id="gallery-1">
+        <div class="g-heading">Gallery</div>
+        <div id="gallery">
+          <div class="image-container" id="im-1">
+            <img src="img1.jpeg" alt="" id="img-1" />
+            <button class="bttn" onclick="openWhatsApp('img-1')">
+              Buy an Item
+            </button>
+            <div onclick="deleteDiv('im-1')" class="delete-button">Delete</div>
+          </div>
+          <div class="image-container" id="im-2">
+            <img src="img2.jpeg" alt="" id="img-2" />
+            <button class="bttn" onclick="openWhatsApp('img-2')">
+              Buy an Item
+            </button>
+            <div onclick="deleteDiv('im-2')" class="delete-button">Delete</div>
+          </div>
+          <div class="image-container" id="im-3">
+            <img src="img3.jpeg" alt="" id="img-3" />
+            <button class="bttn" onclick="openWhatsApp('img-3')">
+              Buy an Item
+            </button>
+            <div onclick="deleteDiv('im-3')" class="delete-button">Delete</div>
+          </div>
+        </div>
+
+        <div class="botn">
+          <input type="file" id="imageInput" accept="image/*" hidden />
+          <button class="btn-1">Select Image</button>
+          <button onclick="addImage()">Add Image</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact-us">
+      <footer class="footer" id="contact us">
+        <div class="row">
+          <div class="col" id="col-1">
+            <h3>Contact us</h3>
+            <a href="#" class="location"
+              ><i class="fa-solid fa-location-dot"></i> Surat, India</a
+            >
+            <a href="#" class="email"
+              ><i class="fa-solid fa-envelope"></i> abc@xyz.com</a
+            >
+            <a href="#" class="telephone"
+              ><i class="fa-solid fa-phone"></i> +91 - 8668851601</a
+            >
+          </div>
+          <div class="col" id="col-2">
+            <h3>quick links</h3>
+            <button class="class-link-1" onclick="scrollToSection('home')">
+              <i class="fa-solid fa-arrow-right"></i> home
+            </button>
+            <button class="class-link-1" onclick="scrollToSection('about-us')">
+              <i class="fa-solid fa-arrow-right"></i> about us
+            </button>
+            <button class="class-link-1" onclick="scrollToSection('Gallary')">
+              <i class="fa-solid fa-arrow-right"></i> gallery
+            </button>
+            <button
+              class="class-link-1"
+              onclick="scrollToSection('Contact-us')"
+            >
+              <i class="fa-solid fa-arrow-right"></i> contact us
+            </button>
+          </div>
+          <div class="col" id="col-3">
+            <h3>follow us</h3>
+            <div class="links">
+              <a href="#" class="link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/strinja.shop?utm_source=ig_web_button_share_sheet&igsh=MmVlMjlkMTBhMg=="
+                class="link"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="link">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://wa.me/918668851601" class="link">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="project.js"></script>
+  </body>
+</html>
